@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://2hcir8r7cd2c"]
+
+[ext_resource type="Texture2D" uid="uid://b3op80v60r8r6" path="res://pucks_bluepaddle.png" id="1_onm21"]
+[ext_resource type="Texture2D" uid="uid://drr4117t2rmjc" path="res://pucks_redpaddle.png" id="2_8432t"]
+[ext_resource type="Texture2D" uid="uid://dlj2w0uvakdlw" path="res://pucks_puck1.png" id="3_w5fcf"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_b68ma"]
+radius = 22.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_5cauv"]
+radius = 22.022715
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_aaru1"]
+radius = 14.0
+
+[node name="Node2D" type="Node2D" unique_id=1539000923]
+
+[node name="PucksBluepaddle" type="Sprite2D" parent="." unique_id=1528144643]
+position = Vector2(445, 502)
+texture = ExtResource("1_onm21")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PucksBluepaddle" unique_id=499899614]
+visible = false
+position = Vector2(1, 0)
+shape = SubResource("CircleShape2D_b68ma")
+
+[node name="PucksRedpaddle" type="Sprite2D" parent="." unique_id=1572251183]
+position = Vector2(422, 379)
+texture = ExtResource("2_8432t")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PucksRedpaddle" unique_id=1505243280]
+visible = false
+position = Vector2(3, 1)
+shape = SubResource("CircleShape2D_5cauv")
+
+[node name="PucksPuck1" type="Sprite2D" parent="." unique_id=1651888265]
+position = Vector2(575, 441)
+texture = ExtResource("3_w5fcf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PucksPuck1" unique_id=416077909]
+visible = false
+position = Vector2(-2, 1)
+shape = SubResource("CircleShape2D_aaru1")
