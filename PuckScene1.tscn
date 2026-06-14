@@ -15,8 +15,10 @@ radius = 14.0
 
 [node name="Node2D" type="Node2D" unique_id=1539000923]
 
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1046795883]
+
 [node name="PucksBluepaddle" type="Sprite2D" parent="." unique_id=1528144643]
-position = Vector2(445, 502)
+position = Vector2(-90, 39)
 texture = ExtResource("1_onm21")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PucksBluepaddle" unique_id=499899614]
@@ -25,7 +27,7 @@ position = Vector2(1, 0)
 shape = SubResource("CircleShape2D_b68ma")
 
 [node name="PucksRedpaddle" type="Sprite2D" parent="." unique_id=1572251183]
-position = Vector2(422, 379)
+position = Vector2(227, -30)
 texture = ExtResource("2_8432t")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PucksRedpaddle" unique_id=1505243280]
@@ -34,7 +36,7 @@ position = Vector2(3, 1)
 shape = SubResource("CircleShape2D_5cauv")
 
 [node name="PucksPuck1" type="Sprite2D" parent="." unique_id=1651888265]
-position = Vector2(575, 441)
+position = Vector2(40, -22)
 texture = ExtResource("3_w5fcf")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PucksPuck1" unique_id=416077909]
